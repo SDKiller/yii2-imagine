@@ -25,7 +25,7 @@ php composer.phar require --prefer-dist yiisoft/yii2-imagine
 or add
 
 ```json
-"yiisoft/yii2-imagine": "~2.0.0"
+"yiisoft/yii2-imagine": "~2.1.0"
 ```
 
 to the `require` section of your composer.json.
@@ -45,7 +45,7 @@ use yii\imagine\Image;
 // frame, rotate and save an image
 Image::frame('path/to/image.jpg', 5, '666', 0)
     ->rotate(-8)
-    ->save('path/to/destination/image.jpg', ['quality' => 50]);
+    ->save('path/to/destination/image.jpg', ['jpeg_quality' => 50]);
 ```
 
 Note that each `Image` method returns an instance of `\Imagine\Image\ImageInterface`.
